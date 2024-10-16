@@ -1,7 +1,11 @@
 <a [routerLink]="" class="card__container">
-  <img class="card__img" src="assets/bt-5.jpg" alt="Capa do jogo BatteField 5">
+  <img class="card__img" [src]=[gameCover] alt="Capa do jogo BatteField 5">
   <app-card-label 
-    gameLabel="Exclusivo" 
+    gameLabel="{{ gameLabel }}" 
+    
   />
-  <app-card-price />
+  <app-card-price 
+    gamePrice="{{ gamePrice }}"
+    gameType="{{ gameType}}"
+  />
 </a>
